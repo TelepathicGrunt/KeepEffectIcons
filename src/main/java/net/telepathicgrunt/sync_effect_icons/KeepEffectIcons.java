@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.telepathicgrunt.sync_effect_icons.capabilities.CapabilityPlayerPosAndDim;
+import net.telepathicgrunt.sync_effect_icons.capabilities.CapabilityPlayerTeleporting;
 import net.telepathicgrunt.sync_effect_icons.config.BzConfig;
 
 @Mod(KeepEffectIcons.MODID)
@@ -33,7 +33,7 @@ public class KeepEffectIcons
 
     private void setup(final FMLCommonSetupEvent event)
     {
-		CapabilityPlayerPosAndDim.register();
+		CapabilityPlayerTeleporting.register();
     }
 
 	public void modConfig(final ModConfig.ModConfigEvent event)

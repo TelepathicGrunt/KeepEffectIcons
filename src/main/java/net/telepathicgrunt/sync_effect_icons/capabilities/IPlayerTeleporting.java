@@ -1,18 +1,12 @@
 package net.telepathicgrunt.sync_effect_icons.capabilities;
 
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.world.dimension.DimensionType;
 
-public interface IPlayerPosAndDim {
+public interface IPlayerTeleporting {
 
 	//what methods the capability will have and what the capability is
 	
-	void setNonBZDim(DimensionType incomingDim);
-	void setDestDim(DimensionType incomingDim);
 	void setTeleporting(boolean teleporting);
-
-	DimensionType getNonBZDim();
-	DimensionType getDestDim();
 	boolean getTeleporting();
 
 	CompoundNBT saveNBTData();

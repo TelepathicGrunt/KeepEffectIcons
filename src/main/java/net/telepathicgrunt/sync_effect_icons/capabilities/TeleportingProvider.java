@@ -8,22 +8,22 @@ import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.capabilities.ICapabilitySerializable;
 import net.minecraftforge.common.util.LazyOptional;
 
-public class PastPosAndDimProvider implements ICapabilityProvider, ICapabilitySerializable<CompoundNBT> {
+public class TeleportingProvider implements ICapabilityProvider, ICapabilitySerializable<CompoundNBT> {
 
 	//the capability itself
-	@CapabilityInject(IPlayerPosAndDim.class)
-	public static Capability<IPlayerPosAndDim> PAST_POS_AND_DIM = null;
+	@CapabilityInject(IPlayerTeleporting.class)
+	public static Capability<IPlayerTeleporting> TELEPORTING_CAP = null;
 	
 	//The instance of the capability? I think?
-	private PlayerPositionAndDimension instance = (PlayerPositionAndDimension) PAST_POS_AND_DIM.getDefaultInstance();
+	private PlayerTeleporting instance = (PlayerTeleporting) TELEPORTING_CAP.getDefaultInstance();
 
 
 	//returns the capability attached to player
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
-		if (cap == PAST_POS_AND_DIM) {
+		if (cap == TELEPORTING_CAP) {
 			if(instance == null) {
-				instance = new PlayerPositionAndDimension();
+				instance = new PlayerTeleporting();
 			}
 			
 			return LazyOptional.of(() -> instance).cast();
