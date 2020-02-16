@@ -1,4 +1,4 @@
-package net.telepathicgrunt.sync_effect_icons;
+package net.telepathicgrunt.sync_potion_effects;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.telepathicgrunt.sync_effect_icons.capabilities.CapabilityPlayerTeleporting;
+import net.telepathicgrunt.sync_potion_effects.capabilities.CapabilityPlayerTeleporting;
 
 @Mod(KeepEffectIcons.MODID)
 public class KeepEffectIcons

@@ -1,4 +1,4 @@
-package net.telepathicgrunt.sync_effect_icons.entities;
+package net.telepathicgrunt.sync_potion_effects.entities;
 
 import java.util.ArrayList;
 
@@ -11,9 +11,9 @@ import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.telepathicgrunt.sync_effect_icons.KeepEffectIcons;
-import net.telepathicgrunt.sync_effect_icons.capabilities.IPlayerTeleporting;
-import net.telepathicgrunt.sync_effect_icons.capabilities.PlayerTeleporting;
+import net.telepathicgrunt.sync_potion_effects.KeepEffectIcons;
+import net.telepathicgrunt.sync_potion_effects.capabilities.IPlayerTeleporting;
+import net.telepathicgrunt.sync_potion_effects.capabilities.PlayerTeleporting;
 
 
 @Mod.EventBusSubscriber(modid = KeepEffectIcons.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)

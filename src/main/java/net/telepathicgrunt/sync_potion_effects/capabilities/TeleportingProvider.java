@@ -1,4 +1,4 @@
-package net.telepathicgrunt.sync_effect_icons.capabilities;
+package net.telepathicgrunt.sync_potion_effects.capabilities;
 
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.Direction;
