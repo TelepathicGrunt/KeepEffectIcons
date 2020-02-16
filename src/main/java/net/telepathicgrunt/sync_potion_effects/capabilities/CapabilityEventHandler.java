@@ -7,12 +7,12 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.telepathicgrunt.sync_potion_effects.KeepEffectIcons;
+import net.telepathicgrunt.sync_potion_effects.SyncPotionEffects;
 
-@EventBusSubscriber(modid=KeepEffectIcons.MODID, bus=Mod.EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid=SyncPotionEffects.MODID, bus=Mod.EventBusSubscriber.Bus.FORGE)
 public class CapabilityEventHandler
 {
-	public static final ResourceLocation PLAYER_TELEPORTING = new ResourceLocation(KeepEffectIcons.MODID, "player_teleporting");
+	public static final ResourceLocation PLAYER_TELEPORTING = new ResourceLocation(SyncPotionEffects.MODID, "player_teleporting");
 	
 	@SubscribeEvent
 	public static void onAttachCapabilitiesToEntities(AttachCapabilitiesEvent<Entity> e)

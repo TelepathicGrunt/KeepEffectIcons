@@ -11,19 +11,19 @@ import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.EntityTravelToDimensionEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.telepathicgrunt.sync_potion_effects.KeepEffectIcons;
+import net.telepathicgrunt.sync_potion_effects.SyncPotionEffects;
 import net.telepathicgrunt.sync_potion_effects.capabilities.IPlayerTeleporting;
 import net.telepathicgrunt.sync_potion_effects.capabilities.PlayerTeleporting;
 
 
-@Mod.EventBusSubscriber(modid = KeepEffectIcons.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = SyncPotionEffects.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PlayerTeleportationBehavior
 {
 
 	@CapabilityInject(IPlayerTeleporting.class)
 	public static Capability<IPlayerTeleporting> TELEPORTING_CAP = null;
 
-	@Mod.EventBusSubscriber(modid = KeepEffectIcons.MODID)
+	@Mod.EventBusSubscriber(modid = SyncPotionEffects.MODID)
 	private static class ForgeEvents
 	{
 		@SubscribeEvent

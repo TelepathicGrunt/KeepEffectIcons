@@ -10,13 +10,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.telepathicgrunt.sync_potion_effects.capabilities.CapabilityPlayerTeleporting;
 
-@Mod(KeepEffectIcons.MODID)
-public class KeepEffectIcons
+@Mod(SyncPotionEffects.MODID)
+public class SyncPotionEffects
 {
-	public static final String MODID = "sync_effect_icons";
+	public static final String MODID = "sync_potion_effects";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
 
-    public KeepEffectIcons() {
+    public SyncPotionEffects() {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 
