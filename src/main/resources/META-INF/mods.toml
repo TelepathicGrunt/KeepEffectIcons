@@ -2,11 +2,11 @@ modLoader="javafml" #mandatory
 loaderVersion="[30,)" #mandatory
 
 [[mods]] #mandatory
-modId="sync_effect_icons" #mandatory
-logoFile="KeepEffectIcons.png"
+modId="sync_potion_effects" #mandatory
+logoFile="SyncPotionEffects.png"
 version="${version}" #mandatory
-displayName="Sync Effect Icons" #mandatory
+displayName="Sync Potion Effects" #mandatory
 displayURL=""
 authors="TelepathicGrunt"
 credits="Special thanks to all the Forge tutorials and debugging help from other modders to help make this mod possible!"
-description='''You know the icon you see in top right corner when you get an effect like Regeneration? This mod makes sure that icon stays visible instead of disappearing for a bit when teleporting between dimensions using the /execute command or by other mod's teleportation means. Despite this mod's icon, Nether portals and End portals doesn't have this issue.'''
+description='''Fixes the vanilla bug that makes potion effects and their icons be delayed when teleporting between dimensions using the /execute command or another mod's teleportation method. Despite this mod's icon, Nether portals and End portals doesn't have this issue.'''
